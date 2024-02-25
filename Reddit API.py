@@ -19,14 +19,12 @@ headers={**headers,**{'Authorization': f'bearer {TOKEN}'}}
 res= requests.get('https://oauth.reddit.com/r/nosleep/hot',headers=headers)
 
 for post in res.json()['data']['children']:
-    li.append((post['data']['titl']:
-    li2.append((post['data']['selftext']e']))
-    
-for post in res.json()['data']['children))
-    
+    li.append((post['data']['title']))
+    li2.append((post['data']['selftext']))
+
 
 print(li[8])
 h=((li2[8]))
-file = open('D:\Coding Work\Codeforces\Python\Reddit.txt','w')
+file = open('D:/Coding/Projects/reddit.txt','w')
 file.write(h)
 file.close()
